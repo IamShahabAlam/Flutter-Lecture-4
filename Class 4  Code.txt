@@ -1,0 +1,225 @@
+void main() {
+                    //   Class 04
+  
+                    //   LIST
+
+  //   ordered elements
+//   var a = ["Shahab", 1, true, false, 2.2, "me"];
+// //Index value  0       1   2     3      4     5
+//    print(a);
+  
+// //   here true and false are the boolean values thats y thy aren't in inverted commas
+// //   all strings are as usual in ""
+// //   Every value has its index value (adress)
+ 
+//   //   for particular value of the list
+//   //   put index value in []
+//   print(a[3]);
+//   print(a.first); //   for first value of the list
+//   var e1 = a.first;
+//   print("the first element of the list is ${e1}");
+
+//   print(a.last); //   for last value of the list
+//   var e6 = a.last;
+//   print("The last element of the list is ${e6}");
+
+//   print(a.elementAt(4)); //   for any particular value of the list
+
+//   print(a.length); //   To get the total length of the list
+  
+//                       // update
+  
+//   a[1] ="Alam"; // to replace any element in the list use its index value
+//   print(a);
+  
+//   a.replaceRange(2,4,[10,false,true]); // for relpace of range in list
+//   // index value 2,1-4,new elements in the list with commas
+//   print(a);
+  
+ //   ////////////////////////////////////////////////// 
+  
+                                // Sort 
+  
+//   var b =[2, 4, 6, 8, 3, 5, 7 ]; //ascending order sorting forr integer
+//   b.sort();
+//   print(b);
+  
+//   var c = ["Shahab","Ali","Rahim","Waiz", "Usman","Bilal"]; //SORTING Alphabet wise for strings
+//     c.sort();
+//     print(c);
+  
+  //   //////////////////////////////////////////////////
+  
+//   var d = [];
+//   if(d.isEmpty) {
+//     print("List is found empty");
+//   }
+  
+//     d.add("Shahab");    // Adding in empty list
+//     d.add("Alam");      // each element separately
+//     d.add("Male");
+  
+//     print(d);
+  
+//   if(d.isNotEmpty){
+//     print("List is not Empty");
+//     print(d);
+//   }
+  
+//   d.clear();          // clear() is used to empty any list
+//   print(d);
+  
+ //   //////////////////////////////////////////////////
+  
+//   var e = [1,2,3,4,5,6,7,8];
+//   print(e);
+  
+//   var e_reversed = List.of(e.reversed); // reversing list
+//   print(e_reversed);
+  
+  //   //////////////////////////////////////////////////
+  
+//   var f = [10,12,13,14,15];
+//   f.addAll([21,22,23]);  // adding all at once in list
+//   print(f);
+  
+//   f.addAll(e); //adding list in a list
+//   print(f);
+  
+//   //////////////////////////////////////////////////
+
+//    var f = [10,12,13,14,15];  // inserting an element in list
+//     f.insert(1,11);  // 1 is index value & 11 is new element
+//     print(f);
+  
+//   var c = ["Shahab","Ali","Rahim","Waiz", "Usman","Bilal"];
+//   c.insertAll(2,["Sharoz","Abdullah"]);
+//   print(c);
+  
+//   //////////////////////////////////////////////////
+  
+//   var c = ["Shahab","Ali","Rahim","Waiz", "Usman","Bilal"];
+//   var f = [1,5,7,8,10,12,13,14,15];
+//   c.remove("Ali");  // removing an element by value
+//   print(c);
+  
+//   c.removeAt(4);  // by index value
+//   print(c);
+  
+//   c.removeLast();
+//   print(c);
+  
+//   f.removeWhere((e)=> e<10);
+//   print(f);
+  
+//   c.removeRange(1,3);
+//   print(c);
+  
+//   f.retainWhere((e)=> e < 9); 
+//   print(f);
+  
+ ///////////////////////////////////////////////////////
+
+              // MAP (Dictionary)
+  
+  //The pair of keys and values in {}
+  //Before colon is key 
+  //After colon is value
+  //key must be unique
+  
+//   var map1 = {1:'Shahab', 2:'Rahim', 4:'Waiz'};
+//   print(map1);
+//   print(map1.keys);     // for only keys
+//   print(map1.values);   // for only values
+//   print(map1.length);   // for length of Map
+  
+ ///////////////////////////////////////////////////////
+
+//   var map2 = {};
+//   print(map2.isEmpty);
+//   print(map2.isNotEmpty);
+
+   ///////////////////////////////////////////////////////
+                 // ADD
+  
+//   var map1 = {1:'Shahab', 2:'Rahim', 4:'Waiz'};
+//   map1[5] = "Ahmed";    // [] for key
+//   print(map1);
+  
+//   var a = map1.putIfAbsent((3),  () => 'Aleem');  // () is key and '' is value add if this key is not present in map
+//   print(a);
+//   print(map1);
+  
+//   var b = map1.putIfAbsent((2), () => 'Sharoz'); // nothing added cuz 2 key already present in the map
+//   print(map1);
+  
+//     map1.addAll({5: 'Abdullah', 6:'Bilal'}); // adding multiple keys n values
+//     print(map1);
+  
+  
+//   var uni = {025 :['Shahab', '6A', 'Morning'] , 133: ['Zaryab', '6A', 'Morning']};      // list in a MAP
+//   print(uni);
+  
+  
+////////////////////////////////////////////////////////////////
+
+                 // REMOVE
+  
+//   var map1 = {1: 'Shahab', 2:'Rahim', 4:'Waiz'};
+//   map1.remove(2);   // removing by key 
+//   print(map1);
+  
+//   map1.removeWhere((key,value) => value.startsWith('W'));
+//   print(map1);    // removing with first letter of the value
+  
+//       map1.clear();   // clears entire map
+//       print(map1);
+  
+////////////////////////////////////////////////////////////////
+
+                 // Merge
+    
+//   var map1 = {1: 'Shahab', 2:'Rahim', 4:'Waiz'};
+//   var map2 = {5:'Abdullah' , 3: 'Usman'};
+//   var mapp = {}..addAll(map1)..addAll(map2);  // .. are necessary
+//   print(mapp);
+  
+//   var map1 = {1: 'Shahab', 2:'Rahim', 4:'Waiz'};
+//   var map2 = {5:'Abdullah' , 6: 'Usman'};
+  
+//   var mapp = {...map1,...map2}; // ... are separate operators
+//   print(mapp);                  // works same as above
+  
+//   var list1 = [1,2,3,4,5];     // merging 2 lists as keys n values
+//   var list2 = ['Shahab', 'Aleem', 'Waiz', 'Rahim', 'Usman'];
+//   var mapp = Map.fromIterables(list1,list2);  // key , value
+//   print(mapp);
+//   Length must be same of both lists for merging
+  
+////////////////////////////////////////////////////////////////
+
+                 // Find / Search   
+  
+//    var map1 = {1:'Shahab', 2 : 'Aleem', 3:'Rahim' , 4: 'Waiz'};
+//   var abc = map1.containsKey(2);  // searching by key
+//   print(abc);
+  
+  
+//    var map1 = {1:'Shahab', 2 : 'Aleem', 3:'Rahim' , 4: 'Waiz'};
+//   var abc = map1.containsValue("Shahab");  // searching by Value
+//   print(abc);
+  
+  ////////////////////////////////////////////////////////////////
+
+                 // Map Iteration Method  
+  
+  var map1 = {1:'Shahab', 2 : 'Aleem', 3:'Rahim' , 4: 'Waiz'};
+  map1.forEach((key,value){
+    print("Keys are : ${key} and Values are : ${value}");
+  });
+  
+ // for printing each key n value in separate columns
+  
+  
+  
+}
